@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(221, 216, 216);
+}
+
+header, form , #cadastro {
+    max-width: 1280px;
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+
+}
+
+
+form input, button {
+    border: 2px solid green;
+    font-size: 20px;
+    padding: 0 5px;
+    
+}
+
+form button {
+    
+    background-color: chartreuse;
+}
+
+#cadastro {
+    border: 2px solid black;
+    margin-left: 5px;
+
+}
+
+#cadastro li {
+    color: black;
+    font-size: 25px;
+    text-transform: uppercase;
+    border-bottom: 1px solid rgb(124, 106, 89);
+}
+
+#cadastro li:checked {
+    text-decoration: line-through;
+}
