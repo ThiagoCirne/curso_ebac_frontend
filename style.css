@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+html {
+    background-color: #ccc;
+}
+
+header {
+    background-color: blue;
+    margin-bottom: 56px;
+}
+
+.menu {
+    margin: 0 auto;
+    background-color: #396af3;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1280px;
+    width: 100%;
+    padding: 16px 0;
+    
+    
+}
+.menu h1 {
+    font-style: italic;
+    margin-left: 16px;
+    color: #fff;
+}
+
+.menu ul{
+    margin-right: 16px;    
+    list-style: none;    
+    display: flex;
+        
+}
+
+
+.menu li a {
+    color: #fff;
+    font-size: 18px;
+    margin-left: 15px;
+    text-decoration: none;
+    
+}
+
+.container {
+    display: flex;
+    margin: 0 auto;
+    max-width: 1280px;
+    width: 100%;
+}
+
+.container img {
+    width: 30%;
+    margin-right: 16px;
+        
+}
+
+.sobre {
+    margin-left: 30px;
+    justify-content: space-between;
+    width: 100%
+}
+
+.sobre h2 {
+    border-bottom: 3px solid #396af3;
+    margin-bottom: 50px;
+    padding-bottom: 30px;
+    color: #396af3;
+    font-style: italic;
+}
+
+.sobre p{
+    font-size: 18px;
+}
+
+section {
+    margin: 0 auto;
+    max-width: 1280px;
+    margin-top: 56px;
+}
+
+section h2 {
+    border-bottom: 3px solid #396af3;
+    padding-bottom: 30px;
+    font-style: italic;
+    color: #396af3;
+}
+
+section h3, p {
+    color:black;
+    margin-top: 10px;
+}
+
+section h3 {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.lista-produtos img {
+    max-width: 100%;
+    margin-top: 56px;
+    
+}
+.lista-produtos {
+    display: grid;
+    grid-template-columns: repeat(4, 24%);
+    column-gap: 1%;
+    row-gap: 5%;
+}
+
+.tenis button {
+    width: 100%;
+    margin:10px 0 30px 0;
+    padding: 8px 0;
+    border-radius: 8px;
+    background-color: #396af3;
+    border: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 640px) {
+    .menu ul {
+        display: block;
+    }
+    
+    .container, .sobre, .produtos {
+        display: block;
+        max-width: 90%;
+    }
+
+    .container img, .produtos h2, .lista-produtos  {
+        width: 90%;
+        margin: 20px auto;
+        display: block;
+    }
+
+    .tenis button {
+        width: 90%;
+        margin-left: 5%;
+    }
+    
+    .tenis img {
+        display: block;
+        max-width: 90%;
+        margin: 16px auto;
+        width: 100%;
+        padding: auto;
+                
+    }
+
+    .lista-produtos h3, .lista-produtos p {
+        text-align: center;
+    }
+
+    .lista-produtos a{
+        text-decoration: none;
+    }
+}
+
+@media  screen and (min-width: 641px) and (max-width: 1023px) {
+    .container, .sobre, .produtos {
+        display: block;
+        max-width: 90%;
+    }
+
+    .container img, .produtos h2 {
+        width: 90%;
+        margin: 20px auto;
+        display: block;
+    }
+
+    .lista-produtos {
+        display: grid;
+        grid-template-columns: repeat(2, 47.5%);
+        column-gap: 5%;
+        margin: 20px auto;
+        max-width: 90%;
+    }
+}
